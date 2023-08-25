@@ -4,41 +4,41 @@
       "nombre":"Lemon Pie",
       "descripcion":"Tarta de 25 cm de diámetro.",
       "precio": 4700,
-      "imagen":"img/lemon.png"
+      "imagen":"images/lemon.png"
     },
     {
       "id":2,
       "nombre":"Tarta Cabsha",
       "descripcion":"Tarta de 25 cm de diámetro. Rellena de dulce de leche con cobertura de chocolate y coco rallado en los bordes.",
       "precio": 4000,
-      "imagen":"img/cabsha.png"
+      "imagen":"images/cabsha.png"
     },
     {
       "id":3,
       "nombre":"Pastafrola",
       "descripcion":"Tarta de 25 cm de diámetro. Puede llevar dulce de membrillo o batata",
       "precio": 4000,
-      "imagen":"img/frola.png"
+      "imagen":"images/frola.png"
     },
     {
       "id":4,
       "nombre":"Tarta frutal",
       "descripcion":"Tarta de 25 cm de diámetro. Base de chantilly, puede llevar geltina. Consultar fruta en disponibilidad.",
       "precio": 4200,
-      "imagen":"img/frutal.png"
+      "imagen":"images/frutal.png"
     },
     {
       "id":5,
       "nombre":"Cheesecake",
       "descripcion":"Cheesecake frío con topping de salsa de frutos del bosque. En temporada opción frutillas.",
       "precio": 4200,
-      "imagen":"img/cheesecake.png"
+      "imagen":"images/cheesecake.png"
     },
     {
       "id":6,
       "nombre":"Lemon Brownie",
       "descripcion":"Brownie, dulce de leche, crema de limón y ralladura de chcolate",
       "precio": 4500,
-      "imagen":"img/lemon_brownie.png"
+      "imagen":"images/lemon_brownie.png"
     }
   ]

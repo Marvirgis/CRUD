@@ -14,15 +14,18 @@
 <body>
     <%- include("./partials/header")-%>
     <main class="productos">
-        <div class="productos_items">
+        
             <% productos.forEach(producto=>{ %>
-                <img src="/img/<%=producto.imagen%>">
-                <h2><%=producto.nombre%></h2>
-                <p><%=producto.descripcion%></p>
-                <span>Precio:$<%=producto.precio</span>
-                <button>Agregar al carrito</button>
-            })
-        </div>
+                <div class="productos_items">
+                <img src="<%=producto.imagen%>"%>
+                <br>
+                <h2 class="nombre"><%= producto.nombre %></h2>
+                <p><%= producto.descripcion %></p>
+                <span>Precio:$<%= producto.precio %></span>
+                <button>Agregar al carrito</button> 
+            </div>
+           <% }) %>
+       
     </main>
     <%- include("./partials/footer") -%>
 

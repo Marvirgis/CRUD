@@ -15,5 +15,7 @@ app.get('/',(req,res)=>{
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
 
+const routerProductos=require("./routes/productosRouter");
+app.use("/index",routerProductos)
 
 app.listen(3000,()=>{console.log("Server corriendo en el puerto 3000")})
