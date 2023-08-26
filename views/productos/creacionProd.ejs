@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>En lo de Cuqui-Sin TACC</title>
+</head>
+<body>
+    <%- include("../partials/header")-%>
+    <main>
+        <form action="/create" method="post">
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre producto">
+            <br>
+            <label for="descripcion">Descripción</label>
+            <textarea rows="4" cols="50" name="descripcion" id="descripcion"></textarea>
+            <br>
+            <label for="precio">Precio</label>
+            <input type="text" name="precio">
+            <br>
+            <label for="imagen">Imagen</label>
+            <input type="file" name="image" id="">
+            <br>
+            <label for="submit"></label>
+            <input type="submit" value="Guardar producto">
+        </form>
+        
+    </main>
+    <%- include("../partials/footer") -%>
+</body>
+</html>
