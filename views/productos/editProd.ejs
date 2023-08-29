@@ -14,18 +14,19 @@
 <body>
     <%- include("../partials/header")-%>
     <main>
-        <form action="/create" method="post">
+        <form action = "/productos/<%=editProduc.id %>?_method=PATCH" method = "POST">
+
             <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" placeholder="Nombre producto">
+            <input type="text" name="nombre" id="nombre" value="<%=editProduc.nombre%>" placeholder="Nombre producto">
             <br>
             <label for="descripcion">Descripción</label>
-            <textarea rows="4" cols="50" name="descripcion" id="descripcion"></textarea>
+            <textarea rows="4" cols="50" name="descripcion" id="descripcion" value="<%=editProduc.descripcion%>"></textarea>
             <br>
             <label for="precio">Precio</label>
-            <input type="text" name="precio">
+            <input type="text" id="precio" value="<%=editProduc.precio%>" name="precio">
             <br>
             <label for="imagen">Imagen</label>
-            <input type="file" name="imagen">
+            <input type="file" id="imagen" value="<%=editProduc.imagen%>" name="imagen">
             <br>
             <label for="submit"></label>
             <input type="submit" value="Guardar producto">

@@ -2,15 +2,15 @@
  {
   "id": 1,
   "nombre": "Lemon Pie",
-  "descripcion": "Tarta de 25 cm de diámetro.",
-  "precio": 4700,
+  "descripcion": "Tarta de 25 cm de diámetro",
+  "precio": "5600",
   "imagen": "images/lemon.png"
  },
  {
   "id": 2,
   "nombre": "Tarta Cabsha",
-  "descripcion": "Tarta de 25 cm de diámetro. Rellena de dulce de leche con cobertura de chocolate y coco rallado en los bordes.",
-  "precio": 4000,
+  "descripcion": "Tarta de 25 cm de diámetro. Rellena de ddl con cobertura de chocolate y coco rallado en los borde",
+  "precio": "4000",
   "imagen": "images/cabsha.png"
  },
  {

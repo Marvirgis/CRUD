@@ -14,14 +14,41 @@ const productosController={
         const{nombre,descripcion,precio,imagen}=req.body;
         const nuevoProd={
             id:productos.length+1,
-            nombre,
-            descripcion,
-            precio,
-            imagen,
+            ...req.body,
+            imagen: req.file ? req.file.filename : 'default-img-png',
         }
         productos.push(nuevoProd)
 		fs.writeFileSync(productosFilePath, JSON.stringify(productos, null, " "))
 		res.redirect("/")
-    }
+    },
+    edit:(req,res)=>{
+        let id = req.params.id;
+        let editProduc = productos.find(producto => producto.id == id)
+        res.render("productos/editProd", { editProduc } )
+        },
+    update: (req,res)=>{
+        let id=req.params.id;
+        let editProduc= productos.find(producto => producto.id == id)
+        editProduc= {
+            id: editProduc.id,
+            ...req.body,
+            imagen: editProduc.imagen
+        };
+        let nuevoProd = productos.map(producto =>{
+            if (producto.id === editProduc.id){
+                return producto={...editProduc};
+            }
+            return producto;
+        })
+        fs.writeFileSync(productosFilePath, JSON.stringify(nuevoProd, null, ' '));
+		res.redirect('/');
+    },
+    destroy: (req, res) => {
+		let id = req.params.id  
+		let finalProductos = productos.filter(producto => producto.id != id) 
+		fs.writeFileSync(productsFilePath, JSON.stringify(finalProductos, null, ' '));
+		res.redirect('/');
+	}
+
 }
 module.exports=productosController

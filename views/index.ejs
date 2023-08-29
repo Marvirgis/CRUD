@@ -14,7 +14,6 @@
 <body>
     <%- include("./partials/header")-%>
     <main class="productos">
-        
             <% productos.forEach(producto=>{ %>
                 <div class="productos_items">
                 <img src="<%=producto.imagen%>"%>
@@ -22,7 +21,7 @@
                 <h2 class="nombre"><%= producto.nombre %></h2>
                 <p><%= producto.descripcion %></p>
                 <span>Precio:$<%= producto.precio %></span>
-                <button>Agregar al carrito</button> 
+                <a href = "/productos/<%=producto.id%>/edit"><button class = "boton">Editar</button></a>
             </div>
            <% }) %>
        <div>
