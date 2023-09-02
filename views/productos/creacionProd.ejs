@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,21 +14,21 @@
 <body>
     <%- include("../partials/header")-%>
     <main>
-        <form action="/create" method="post">
+        <form action="/create" method="post" class="creacion">
             <label for="nombre">Nombre</label>
-            <input type="text" name="nombre" id="nombre" placeholder="Nombre producto">
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre producto" class="dato">
             <br>
             <label for="descripcion">Descripción</label>
-            <textarea rows="4" cols="50" name="descripcion" id="descripcion"></textarea>
+            <textarea rows="4" cols="50" name="descripcion" id="descripcion"class="dato"></textarea>
             <br>
             <label for="precio">Precio</label>
-            <input type="text" name="precio">
+            <input type="text" name="precio" class="dato">
             <br>
             <label for="imagen">Imagen</label>
-            <input type="file" name="imagen">
+            <input type="file" name="imagen" class="dato">
             <br>
             <label for="submit"></label>
-            <input type="submit" value="Guardar producto">
+            <input type="submit" value="Guardar producto" class="dato">
         </form>
         
     </main>

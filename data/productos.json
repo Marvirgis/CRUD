@@ -2,15 +2,15 @@
  {
   "id": 1,
   "nombre": "Lemon Pie",
-  "descripcion": "Tarta de 25 cm de diámetro",
-  "precio": "5600",
+  "descripcion": "Tarta de 25 cm de diámetro.",
+  "precio": 4700,
   "imagen": "images/lemon.png"
  },
  {
   "id": 2,
   "nombre": "Tarta Cabsha",
-  "descripcion": "Tarta de 25 cm de diámetro. Rellena de ddl con cobertura de chocolate y coco rallado en los borde",
-  "precio": "4000",
+  "descripcion": "Tarta de 25 cm de diámetro. Rellena de dulce de leche con cobertura de chocolate y coco rallado en los bordes.",
+  "precio": 4000,
   "imagen": "images/cabsha.png"
  },
  {
@@ -34,11 +34,10 @@
   "precio": 4200,
   "imagen": "images/cheesecake.png"
  },
- {
-  "id": 6,
-  "nombre": "Lemon Brownie",
-  "descripcion": "Brownie, dulce de leche, crema de limón y ralladura de chcolate",
-  "precio": 4500,
-  "imagen": "images/lemon_brownie.png"
- }
+{  "id":6,
+    "nombre":"Lemon Brownie",
+    "descripcion":"Brownie, dulce de leche, crema de limón y ralladura de chcolate",
+    "precio": 4500,
+    "imagen":"img/lemon_brownie.png"
+  }
 ]

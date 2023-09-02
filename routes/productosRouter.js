@@ -8,6 +8,6 @@ router.post("/create",productoController.stock)
 // router.post('/', uploadFile.single('imagen'), productoController.stock);
 router.get('/productos/:id/edit', productoController.edit)
 router.patch('/productos/:id', productoController.update);
-router.delete('/delete/:id',productoController.destroy); 
+router.delete('/productos/:id',productoController.destroy); 
 
 module.exports=router

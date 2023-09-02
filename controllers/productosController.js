@@ -44,9 +44,10 @@ const productosController={
 		res.redirect('/');
     },
     destroy: (req, res) => {
-		let id = req.params.id  
+		let id = req.params.id;
 		let finalProductos = productos.filter(producto => producto.id != id) 
-		fs.writeFileSync(productsFilePath, JSON.stringify(finalProductos, null, ' '));
+        // console.log(finalProductos);
+		fs.writeFileSync(productosFilePath, JSON.stringify(finalProductos, null, ' '));
 		res.redirect('/');
 	}
 

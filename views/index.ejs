@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,12 +16,17 @@
     <main class="productos">
             <% productos.forEach(producto=>{ %>
                 <div class="productos_items">
-                <img src="<%=producto.imagen%>"%>
+                <img src="<%=producto.imagen%>">
                 <br>
                 <h2 class="nombre"><%= producto.nombre %></h2>
                 <p><%= producto.descripcion %></p>
                 <span>Precio:$<%= producto.precio %></span>
-                <a href = "/productos/<%=producto.id%>/edit"><button class = "boton">Editar</button></a>
+                <div class="modificaciones">
+                    <a href = "/productos/<%=producto.id%>/edit"><button class = "boton">Editar</button></a>
+                    <form action="/productos/<%= producto.id %>/?_method=DELETE" method="POST">
+                        <button type="submit" class = "boton">Eliminar</button>
+                    </form> 
+                </div>
             </div>
            <% }) %>
        <div>
