@@ -5,7 +5,7 @@ const productoController=require("../controllers/productosController")
 router.get("/",productoController.list)
 router.get('/create',productoController.create)
 router.post("/create",productoController.stock)
-// router.post('/', uploadFile.single('imagen'), productoController.stock);
+//router.post('/', uploadFile.single('imagen'), productoController.stock);
 router.get('/productos/:id/edit', productoController.edit)
 router.patch('/productos/:id', productoController.update);
 router.delete('/productos/:id',productoController.destroy); 

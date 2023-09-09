@@ -34,10 +34,10 @@
   "precio": 4200,
   "imagen": "images/cheesecake.png"
  },
-{  "id":6,
+ {  "id":6,
     "nombre":"Lemon Brownie",
     "descripcion":"Brownie, dulce de leche, crema de limón y ralladura de chcolate",
     "precio": 4500,
-    "imagen":"img/lemon_brownie.png"
+    "imagen":"images/lemon_brownie.png"
   }
 ]
